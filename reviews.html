@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>AETHON | Reviews</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header scrolled">
+        <nav class="navbar container">
+
+            <a href="index.html" class="brand">
+                <img
+                    src="images/logo.png"
+                    alt="Logo AETHON"
+                    class="brand-logo"
+                >
+
+                <div class="brand-text">
+                    <span>AETHON</span>
+                    <small>BUILT TO PERFORM</small>
+                </div>
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+                <li>
+                    <a href="index.html" class="nav-link">
+                        Acasă
+                    </a>
+                </li>
+
+                <li>
+                    <a href="index.html#products" class="nav-link">
+                        Produse
+                    </a>
+                </li>
+
+                <li>
+                    <a href="index.html#about" class="nav-link">
+                        Despre noi
+                    </a>
+                </li>
+
+                <li>
+                    <a href="reviews.html" class="nav-link active-link">
+                        Reviews
+                    </a>
+                </li>
+            </ul>
+
+            <button
+                class="menu-button"
+                id="menuButton"
+                aria-label="Deschide meniul"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HERO REVIEWS -->
+        <section class="reviews-hero">
+            <div class="container reviews-hero-content reveal">
+
+                <span class="eyebrow">
+                    AETHON COMMUNITY
+                </span>
+
+                <h1>
+                    REAL PEOPLE.<br>
+                    <span>REAL PROGRESS.</span>
+                </h1>
+
+                <p>
+                    Descoperă experiențele clienților care au ales
+                    produsele AETHON.
+                </p>
+
+                <a
+                    href="#addReview"
+                    class="button button-primary"
+                >
+                    Adaugă un review
+                </a>
+
+            </div>
+        </section>
+
+        <!-- STATISTICI -->
+        <section class="reviews-summary">
+            <div class="container reviews-summary-grid">
+
+                <div class="review-summary-item reveal">
+                    <strong>4.9</strong>
+                    <span>Rating mediu</span>
+                </div>
+
+                <div class="review-summary-item reveal">
+                    <strong>98%</strong>
+                    <span>Clienți mulțumiți</span>
+                </div>
+
+                <div class="review-summary-item reveal">
+                    <strong id="reviewCount">3</strong>
+                    <span>Review-uri</span>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- LISTA REVIEW-URI -->
+        <section class="reviews-section section">
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <div>
+                        <span class="eyebrow">
+                            CUSTOMER EXPERIENCES
+                        </span>
+
+                        <h2>CE SPUN CLIENȚII</h2>
+                    </div>
+
+                    <p>
+                        Review-uri despre îmbrăcămintea și suplimentele
+                        AETHON.
+                    </p>
+                </div>
+
+                <div class="reviews-grid" id="reviewsGrid">
+
+                    <article class="review-card reveal">
+                        <div class="review-card-header">
+                            <div class="review-avatar">
+                                AM
+                            </div>
+
+                            <div>
+                                <h3>Andrei M.</h3>
+                                <span>Compression Shirt</span>
+                            </div>
+                        </div>
+
+                        <div class="review-stars">
+                            ★★★★★
+                        </div>
+
+                        <p>
+                            Materialul este foarte confortabil și se
+                            comportă excelent în timpul antrenamentelor.
+                            Designul arată premium.
+                        </p>
+
+                        <small>Client verificat</small>
+                    </article>
+
+                    <article class="review-card reveal">
+                        <div class="review-card-header">
+                            <div class="review-avatar">
+                                RD
+                            </div>
+
+                            <div>
+                                <h3>Robert D.</h3>
+                                <span>Whey Protein</span>
+                            </div>
+                        </div>
+
+                        <div class="review-stars">
+                            ★★★★★
+                        </div>
+
+                        <p>
+                            Gust foarte bun, se amestecă ușor și mă ajută
+                            după antrenamentele intense.
+                        </p>
+
+                        <small>Client verificat</small>
+                    </article>
+
+                    <article class="review-card reveal">
+                        <div class="review-card-header">
+                            <div class="review-avatar">
+                                LP
+                            </div>
+
+                            <div>
+                                <h3>Laura P.</h3>
+                                <span>Performance Hoodie</span>
+                            </div>
+                        </div>
+
+                        <div class="review-stars">
+                            ★★★★★
+                        </div>
+
+                        <p>
+                            Hanoracul are un design foarte reușit,
+                            material gros și o croială oversized exact
+                            cum îmi doream.
+                        </p>
+
+                        <small>Client verificat</small>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- FORMULAR REVIEW -->
+        <section class="add-review-section section" id="addReview">
+            <div class="container add-review-layout">
+
+                <div class="add-review-content reveal">
+                    <span class="eyebrow">
+                        SHARE YOUR EXPERIENCE
+                    </span>
+
+                    <h2>
+                        ADAUGĂ UN
+                        <span>REVIEW</span>
+                    </h2>
+
+                    <p>
+                        Spune comunității AETHON ce părere ai despre
+                        produsele noastre.
+                    </p>
+                </div>
+
+                <form
+                    class="review-form reveal"
+                    id="reviewForm"
+                >
+
+                    <div class="form-group">
+                        <label for="reviewName">
+                            Numele tău
+                        </label>
+
+                        <input
+                            type="text"
+                            id="reviewName"
+                            placeholder="Exemplu: Alex M."
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="reviewProduct">
+                            Produsul
+                        </label>
+
+                        <select id="reviewProduct" required>
+                            <option value="">
+                                Selectează produsul
+                            </option>
+
+                            <option value="Compression Shirt">
+                                Compression Shirt
+                            </option>
+
+                            <option value="Oversized T-Shirt">
+                                Oversized T-Shirt
+                            </option>
+
+                            <option value="Performance Hoodie">
+                                Performance Hoodie
+                            </option>
+
+                            <option value="Performance Joggers">
+                                Performance Joggers
+                            </option>
+
+                            <option value="Whey Protein">
+                                Whey Protein
+                            </option>
+
+                            <option value="Pre-Workout">
+                                Pre-Workout
+                            </option>
+
+                            <option value="Creatine Monohydrate">
+                                Creatine Monohydrate
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="reviewRating">
+                            Rating
+                        </label>
+
+                        <select id="reviewRating" required>
+                            <option value="5">
+                                5 stele
+                            </option>
+
+                            <option value="4">
+                                4 stele
+                            </option>
+
+                            <option value="3">
+                                3 stele
+                            </option>
+
+                            <option value="2">
+                                2 stele
+                            </option>
+
+                            <option value="1">
+                                1 stea
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="reviewMessage">
+                            Review-ul tău
+                        </label>
+
+                        <textarea
+                            id="reviewMessage"
+                            rows="6"
+                            placeholder="Scrie experiența ta..."
+                            required
+                        ></textarea>
+                    </div>
+
+                    <button
+                        type="submit"
+                        class="button button-primary"
+                    >
+                        Publică review-ul
+                    </button>
+
+                    <p
+                        class="review-form-message"
+                        id="reviewFormMessage"
+                    ></p>
+
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+
+            <div class="footer-brand">
+                <a href="index.html" class="brand">
+                    <img
+                        src="images/logo.png"
+                        alt="Logo AETHON"
+                        class="brand-logo"
+                    >
+
+                    <div class="brand-text">
+                        <span>AETHON</span>
+                        <small>BUILT TO PERFORM</small>
+                    </div>
+                </a>
+
+                <p>
+                    Produse premium pentru performanță fără limite.
+                </p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Pagini</h3>
+                <a href="index.html">Acasă</a>
+                <a href="index.html#products">Produse</a>
+                <a href="reviews.html">Reviews</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Social Media</h3>
+                <a href="#">Instagram</a>
+                <a href="#">TikTok</a>
+                <a href="#">YouTube</a>
+            </div>
+
+        </div>
+
+        <div class="container footer-bottom">
+            <p>
+                © <span id="currentYear"></span> AETHON.
+                Toate drepturile rezervate.
+            </p>
+
+            <p>
+                One mind. One mission. Limitless potential.
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
